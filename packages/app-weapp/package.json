@@ -1,0 +1,36 @@
+{
+  "name": "@what-to-eat/app-weapp",
+  "version": "1.0.0",
+  "description": "Taro WeChat Mini Program app",
+  "main": "index.js",
+  "scripts": {
+    "build:weapp": "taro build --type weapp",
+    "dev:weapp": "taro build --type weapp --watch",
+    "build": "taro build --type weapp",
+    "dev": "taro build --type weapp --watch",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@what-to-eat/core": "workspace:*",
+    "@tarojs/taro": "^3.6.0",
+    "@tarojs/runtime": "^3.6.0",
+    "@tarojs/components": "^3.6.0",
+    "@tarojs/plugin-framework-react": "^3.6.0",
+    "@tarojs/plugin-platform-weapp": "^3.6.0",
+    "@tarojs/react": "^3.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "typescript": "^5.3.0",
+    "@tarojs/cli": "^3.6.0",
+    "@tarojs/webpack5-runner": "^3.6.0",
+    "@babel/core": "^7.23.0",
+    "babel-preset-taro": "^3.6.0",
+    "eslint": "^8.54.0",
+    "eslint-config-taro": "^3.6.0"
+  }
+}

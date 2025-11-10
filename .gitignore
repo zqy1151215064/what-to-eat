@@ -137,3 +137,45 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Turborepo
+.turbo
+
+# pnpm
+pnpm-lock.yaml
+
+# React Native
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# Android
+*.apk
+*.aab
+*.ap_
+*.dex
+local.properties
+android/.idea/
+android/.gradle/
+android/app/build/
+android/build/
+
+# iOS
+*.xcworkspace
+!default.xcworkspace
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+Pods/
+ios/Pods/
+ios/build/
+
+# Taro
+.temp/
+
+# SWC compiled plugins
+.swc/
