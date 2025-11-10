@@ -176,3 +176,6 @@ ios/build/
 
 # Taro
 .temp/
+
+# SWC compiled plugins
+.swc/
