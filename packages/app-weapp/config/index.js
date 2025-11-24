@@ -1,3 +1,4 @@
+const path = require("path");
 const config = {
   projectName: 'what-to-eat-weapp',
   date: '2024-1-1',
@@ -11,6 +12,9 @@ const config = {
   outputRoot: 'dist',
   plugins: ['@tarojs/plugin-framework-react'],
   defineConstants: {
+  },
+  alias: {
+    "@": path.resolve(__dirname, "..", "src")
   },
   copy: {
     patterns: [
@@ -45,7 +49,7 @@ const config = {
           generateScopedName: '[name]__[local]___[hash:base64:5]'
         }
       }
-    }
+    },
   }
 };
 

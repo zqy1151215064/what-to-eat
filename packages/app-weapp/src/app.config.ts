@@ -1,9 +1,5 @@
 export default defineAppConfig({
-  pages: [
-    'pages/index/index',
-    'pages/ingredients/index',
-    'pages/recipes/index'
-  ],
+  pages: ['pages/home/index', 'pages/fridge/index', 'pages/recipes/index', 'pages/me/index'],
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#4CAF50',
@@ -17,22 +13,28 @@ export default defineAppConfig({
     borderStyle: 'black',
     list: [
       {
-        pagePath: 'pages/index/index',
-        text: '首页',
+        pagePath: 'pages/home/index',
+        text: 'Home',
         iconPath: './assets/home.png',
         selectedIconPath: './assets/home-active.png'
       },
       {
-        pagePath: 'pages/ingredients/index',
-        text: '食材',
-        iconPath: './assets/ingredients.png',
-        selectedIconPath: './assets/ingredients-active.png'
+        pagePath: 'pages/fridge/index',
+        text: 'Fridge',
+        iconPath: './assets/fridge.png',
+        selectedIconPath: './assets/fridge-active.png'
       },
       {
         pagePath: 'pages/recipes/index',
-        text: '菜谱',
+        text: 'Recipes',
         iconPath: './assets/recipes.png',
         selectedIconPath: './assets/recipes-active.png'
+      },
+      {
+        pagePath: 'pages/me/index',
+        text: 'Me',
+        iconPath: './assets/me.png',
+        selectedIconPath: './assets/me-active.png'
       }
     ]
   }
